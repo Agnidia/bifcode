@@ -158,7 +158,7 @@
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1630;
 				LastUpgradeCheck = 2620;
-				ORGANIZATIONNAME = "IGR Soft";
+				ORGANIZATIONNAME = "Agnidia";
 				TargetAttributes = {
 					8BC2655B2DEDD3F400F279A4 = {
 						CreatedOnToolsVersion = 16.3;
