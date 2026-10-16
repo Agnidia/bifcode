@@ -102,7 +102,7 @@ Support the developer via DeveloperSupportStore integration.
 | Package | Version | Purpose |
 |---------|---------|---------|
 | [CodeEditSourceEditor](https://github.com/CodeEditApp/CodeEditSourceEditor) | 0.12.0+ | Code editor with syntax highlighting |
-| [DeveloperSupportStore](https://github.com/IGRSoft/DeveloperSupportStore) | 1.0.0+ | In-app purchase support |
+| [DeveloperSupportStore](https://github.com/Agnidia/DeveloperSupportStore) | 1.0.0+ | In-app purchase support |
 
 ## Project Architecture
 

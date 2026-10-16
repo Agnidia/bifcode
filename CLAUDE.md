@@ -159,7 +159,7 @@ BifcodeUITests/                              # UI tests
 |---------|---------|---------|
 | [CodeEditSourceEditor](https://github.com/CodeEditApp/CodeEditSourceEditor) | 0.12.0+ | Xcode-inspired code editor with syntax highlighting |
 | [CodeEditLanguages](https://github.com/CodeEditApp/CodeEditLanguages) | 0.1.20+ | Tree-sitter language support (19+ languages) |
-| [DeveloperSupportStore](https://github.com/IGRSoft/DeveloperSupportStore) | 1.0.0+ | In-app purchase support |
+| [DeveloperSupportStore](https://github.com/Agnidia/DeveloperSupportStore) | 1.0.0+ | In-app purchase support |
 
 ### Adding CodeEditSourceEditor
 
