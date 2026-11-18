@@ -1,5 +1,5 @@
 {
-  "originHash" : "0cd051dc8f2c3b875e43626c98c39a0fe01145834e02f763e132ae5aba314498",
+  "originHash" : "e5b1c722e5e57c759163cbd659e29488495b8a33851d9a383320b262fdb5f5ee",
   "pins" : [
     {
       "identity" : "codeeditlanguages",
@@ -35,6 +35,15 @@
       "state" : {
         "revision" : "d7ac3f11f22ec2e820187acce8f3a3fb7aa8ddec",
         "version" : "0.12.1"
+      }
+    },
+    {
+      "identity" : "customizedaboutview",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Agnidia/CustomizedAboutView.git",
+      "state" : {
+        "revision" : "fd2ca8f420e45d4818e49271b1936ea8474e01ed",
+        "version" : "1.1.0"
       }
     },
     {

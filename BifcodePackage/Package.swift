@@ -13,14 +13,16 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/CodeEditApp/CodeEditSourceEditor", from: "0.15.0"),
-        .package(url: "https://github.com/Agnidia/DeveloperSupportStore", from: "1.0.3")
+        .package(url: "https://github.com/Agnidia/DeveloperSupportStore", from: "1.0.3"),
+        .package(url: "https://github.com/Agnidia/CustomizedAboutView.git", from: "1.0.0")
     ],
     targets: [
         .target(
             name: "BifcodeFeature",
             dependencies: [
                 .product(name: "CodeEditSourceEditor", package: "CodeEditSourceEditor"),
-                .product(name: "DeveloperSupportStore", package: "DeveloperSupportStore")
+                .product(name: "DeveloperSupportStore", package: "DeveloperSupportStore"),
+                .product(name: "CustomizedAboutView", package: "CustomizedAboutView")
             ],
             resources: [
                 .process("Resources")
