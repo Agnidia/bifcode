@@ -2,7 +2,7 @@
 //  BifcodeUITests.swift
 //
 //  Created on 17.12.2025.
-//  Copyright © 2026 IGR Soft. All rights reserved.
+//  Copyright © 2026 Agnidia. All rights reserved.
 //
 
 import XCTest
@@ -22,7 +22,7 @@ final class BifcodeUITests: XCTestCase {
     }
     
     @MainActor
-    func testExample() throws {
+    func testExample() {
         // UI tests must launch the application that they test.
         let app = XCUIApplication()
         app.launch()

@@ -2,7 +2,7 @@
 //  SettingsTypes.swift
 //
 //  Created on 17.12.2025.
-//  Copyright © 2026 IGR Soft. All rights reserved.
+//  Copyright © 2026 Agnidia. All rights reserved.
 //
 
 import AppKit
@@ -186,7 +186,9 @@ public enum IndicatorIcon: String, CaseIterable, Sendable {
     /// ```swift
     /// Image(systemName: icon.systemName)
     /// ```
-    public var systemName: String { rawValue }
+    public var systemName: String {
+        rawValue
+    }
     
     /// Icons suitable for "Do" (positive) indicators.
     ///

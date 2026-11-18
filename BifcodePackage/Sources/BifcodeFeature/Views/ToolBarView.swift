@@ -2,7 +2,7 @@
 //  ToolBarView.swift
 //
 //  Created on 17.12.2025.
-//  Copyright © 2026 IGR Soft. All rights reserved.
+//  Copyright © 2026 Agnidia. All rights reserved.
 //
 
 import CodeEditLanguages
@@ -160,7 +160,6 @@ public struct ToolBarView: View {
         .background(Color.toolbarBackground)
     }
     
-    @ViewBuilder
     private func codeSettingsView() -> some View {
         VStack(alignment: .leading, spacing: 12) {
             // Section Header - HIG: Use clear, hierarchical typography
@@ -226,7 +225,6 @@ public struct ToolBarView: View {
         .fixedSize(horizontal: true, vertical: false)
     }
     
-    @ViewBuilder
     private func indicatorSettingsView() -> some View {
         VStack(alignment: .leading, spacing: 12) {
             // Section Header - HIG: Use clear, hierarchical typography

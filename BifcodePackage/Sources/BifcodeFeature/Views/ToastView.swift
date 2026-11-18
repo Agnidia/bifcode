@@ -2,7 +2,7 @@
 //  ToastView.swift
 //
 //  Created on 23.12.2025.
-//  Copyright © 2026 IGR Soft. All rights reserved.
+//  Copyright © 2026 Agnidia. All rights reserved.
 //
 
 import AppKit
@@ -21,19 +21,25 @@ public enum ExportResult: Sendable {
     
     /// Whether the export was successful.
     var isSuccess: Bool {
-        if case .success = self { return true }
+        if case .success = self {
+            return true
+        }
         return false
     }
     
     /// The exported file URL if successful, nil otherwise.
     var fileURL: URL? {
-        if case let .success(url) = self { return url }
+        if case let .success(url) = self {
+            return url
+        }
         return nil
     }
     
     /// The error if failed, nil otherwise.
     var error: Error? {
-        if case let .failure(error) = self { return error }
+        if case let .failure(error) = self {
+            return error
+        }
         return nil
     }
 }

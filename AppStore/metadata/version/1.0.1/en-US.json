@@ -1,0 +1,7 @@
+{
+  "description": "Create clear Do and Don't code comparison images for documentation, articles, and social posts — in seconds.\n\nHow It Works:\nPaste a good and a bad snippet, pick a language and theme, and export a polished PNG with a Do or Don't badge.\n\nCustomize Your Way:\n• Syntax highlighting for 19 languages\n• 11 syntax themes, dark and light\n• Badge position, style, size, and custom label\n• Font size from 10 to 24 pt\n• Optional title bar for cleaner exports\n\nExport:\n• High-resolution 2x PNG\n• Side-by-side or stacked layout\n• Save to a folder you choose\n• Reveal in Finder from the confirmation toast\n\nBuilt for Mac:\n• Full VoiceOver support\n• Reduced motion support\n\nPrivacy First:\n• All processing happens locally on your Mac\n• No data collected or sent anywhere\n• Works completely offline",
+  "keywords": "code,snippet,compare,image,screenshot,syntax,highlight,developer,docs,swift,do,dont,badge",
+  "promotionalText": "Turn two code snippets into a clean Do and Don't comparison image. 19 languages, 11 themes, 2x PNG export.",
+  "supportUrl": "https://agnidia.com/support",
+  "whatsNew": "• New About window\n• Updated dependencies and stability improvements"
+}
