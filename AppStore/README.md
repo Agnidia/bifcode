@@ -32,10 +32,10 @@ asc metadata validate --dir AppStore/metadata
 | Field | Value |
 |---|---|
 | Primary category | Developer Tools |
-| Copyright | Agnidia 2008 - 2026 |
+| Copyright | 2008 - 2026 Agnidia |
 
 `asc metadata` does not manage these fields. Update copyright with
-`asc versions update --version-id <VERSION_ID> --copyright "Agnidia 2008 - 2026"`.
+`asc versions update --version-id <VERSION_ID> --copyright "2008 - 2026 Agnidia"`.
 
 ## Screenshots
 
