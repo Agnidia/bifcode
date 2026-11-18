@@ -1,5 +1,5 @@
 {
-  "originHash" : "940797f4df50fc3ed2854a3b92465fc27d52127b53e5d66f7742a229653030a0",
+  "originHash" : "0cd051dc8f2c3b875e43626c98c39a0fe01145834e02f763e132ae5aba314498",
   "pins" : [
     {
       "identity" : "codeeditlanguages",
@@ -40,7 +40,7 @@
     {
       "identity" : "developersupportstore",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/IGRSoft/DeveloperSupportStore",
+      "location" : "https://github.com/Agnidia/DeveloperSupportStore",
       "state" : {
         "revision" : "c9d8f3282a649273fdbf4d3841e45e10a4951ee4",
         "version" : "1.0.3"
@@ -51,8 +51,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/ChimeHQ/Rearrange",
       "state" : {
-        "revision" : "f1d74e1642956f0300756ad8d1d64e9034857bc3",
-        "version" : "2.0.0"
+        "revision" : "4de8be41dba304192e87dc0a11e0aa39e72aa2e8",
+        "version" : "2.1.1"
       }
     },
     {
@@ -69,8 +69,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/apple/swift-collections.git",
       "state" : {
-        "revision" : "6675bc0ff86e61436e615df6fc5174e043e57924",
-        "version" : "1.4.1"
+        "revision" : "88754449ab766a739610b660e117762115fabc9c",
+        "version" : "1.7.6"
       }
     },
     {
@@ -78,8 +78,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/lukepistrol/SwiftLintPlugin",
       "state" : {
-        "revision" : "a3877065a7d72ee40e1fa64e13b9e33e846c667c",
-        "version" : "0.63.1"
+        "revision" : "b384a67cf45d9989aed5aab23e226cbc7bc2cd54",
+        "version" : "0.65.0"
       }
     },
     {
@@ -105,8 +105,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/ChimeHQ/TextStory",
       "state" : {
-        "revision" : "91df6fc9bd817f9712331a4a3e826f7bdc823e1d",
-        "version" : "0.9.1"
+        "revision" : "a52db1a2eca74d37c8c19bf3165416941632ed45",
+        "version" : "0.9.2"
       }
     },
     {
