@@ -119,7 +119,10 @@ Bifcode/
 │   ├── Package.swift                 # Package configuration
 │   ├── Sources/BifcodeFeature/       # Feature code
 │   └── Tests/BifcodeFeatureTests/    # Unit tests
-└── BifcodeUITests/                   # UI automation tests
+├── BifcodeUITests/                   # UI automation tests
+├── Config/                           # XCConfig build settings
+├── AppStore/                         # App Store listing (asc metadata, screenshots)
+└── AGENTS.md                         # Development guidelines for AI agents
 ```
 
 ### Feature Package Structure
@@ -209,6 +212,20 @@ Build settings are managed through **XCConfig files** in `Config/`:
 ### App Sandbox & Entitlements
 
 The app is sandboxed with file access permissions. Edit `Bifcode/Bifcode.entitlements` to modify capabilities.
+
+## Publishing
+
+The App Store listing is managed with the [App Store Connect CLI (`asc`)](https://github.com/rorkai/App-Store-Connect-CLI):
+
+- `AppStore/metadata/` - name, subtitle, description, keywords and release notes (en-US, uk)
+- `AppStore/screenshots/APP_DESKTOP/` - Mac screenshots (shared by all locales)
+- `AppStore/README.md` - full runbook (validate, upload screenshots, apply metadata, submit)
+
+```bash
+asc metadata validate --dir AppStore/metadata
+```
+
+Xcode Cloud builds and uploads the binary. The build number comes from `CURRENT_PROJECT_VERSION` in `Config/Shared.xcconfig`.
 
 ## Notes
 

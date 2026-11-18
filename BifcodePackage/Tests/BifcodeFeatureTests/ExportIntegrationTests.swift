@@ -2,7 +2,7 @@
 //  ExportIntegrationTests.swift
 //
 //  Created on 18.12.2025.
-//  Copyright © 2026 IGR Soft. All rights reserved.
+//  Copyright © 2026 Agnidia. All rights reserved.
 //
 
 import AppKit
@@ -152,7 +152,7 @@ struct ExportIntegrationTests {
     }
     
     @Test("saveImage uses default Desktop when no bookmark")
-    func saveImageUsesDesktopByDefault() async throws {
+    func saveImageUsesDesktopByDefault() {
         BookmarkManager.shared.clearBookmark()
         
         let viewModel = AppViewModel()
@@ -295,7 +295,7 @@ struct PanelStateIntegrationTests {
     }
     
     @Test("complete workflow: create, edit, save")
-    func completeWorkflow() async throws {
+    func completeWorkflow() {
         let viewModel = AppViewModel()
         
         // 1. Set up panels

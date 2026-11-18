@@ -2,7 +2,7 @@
 //  AboutView.swift
 //
 //  Created on 18.11.2026.
-//  Copyright © 2026 IGR Soft. All rights reserved.
+//  Copyright © 2026 Agnidia. All rights reserved.
 //
 
 import AppKit
@@ -11,11 +11,11 @@ import SwiftUI
 
 public struct AboutView: View {
     private static let otherAppIDs = [1_583_462_846, 6_759_503_967, 1_661_688_468]
-
+    
     fileprivate static var appName: String {
         CustomizedAboutMetadata().name
     }
-
+    
     private var configuration: CustomizedAboutConfiguration {
         let bundleMetadata = CustomizedAboutMetadata()
         let year = Calendar.current.component(.year, from: Date())
@@ -26,7 +26,7 @@ public struct AboutView: View {
             bundleIdentifier: bundleMetadata.bundleIdentifier,
             copyright: "© 2008 - \(year) Agnidia"
         )
-
+        
         return CustomizedAboutConfiguration(
             metadata: metadata,
             appStoreIDs: Self.otherAppIDs,
@@ -35,9 +35,9 @@ public struct AboutView: View {
             contactWebsite: URL(string: "mailto:support@agnidia.com")
         )
     }
-
+    
     public init() {}
-
+    
     public var body: some View {
         CustomizedAboutView(configuration: configuration) {
             Image(nsImage: NSImage.appIcon)

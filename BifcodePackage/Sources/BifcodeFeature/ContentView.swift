@@ -2,7 +2,7 @@
 //  ContentView.swift
 //
 //  Created on 17.12.2025.
-//  Copyright © 2026 IGR Soft. All rights reserved.
+//  Copyright © 2026 Agnidia. All rights reserved.
 //
 
 import AppKit
@@ -67,7 +67,7 @@ public struct ContentView: View {
     
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
     
-    // Language is stored via @AppStorage in ToolBarView, we read it here to initialize panels
+    /// Language is stored via @AppStorage in ToolBarView, we read it here to initialize panels
     @AppStorage("selectedLanguage") private var selectedLanguageRaw: String = "swift"
     
     private var selectedLanguage: CodeLanguage {
@@ -168,26 +168,25 @@ public struct ContentView: View {
     
     // MARK: - Panels
     
+    @ViewBuilder
     private var panelsView: some View {
-        Group {
-            if layout == .horizontal {
-                HStack(spacing: 24) {
+        if layout == .horizontal {
+            HStack(spacing: 24) {
+                panels
+            }
+            .padding(24)
+            .accessibilityElement(children: .contain)
+            .accessibilityLabel("Code comparison")
+            .accessibilityHint("Side by side Do and Don't panels")
+        } else {
+            ScrollView {
+                VStack(spacing: 24) {
                     panels
                 }
                 .padding(24)
                 .accessibilityElement(children: .contain)
                 .accessibilityLabel("Code comparison")
-                .accessibilityHint("Side by side Do and Don't panels")
-            } else {
-                ScrollView {
-                    VStack(spacing: 24) {
-                        panels
-                    }
-                    .padding(24)
-                    .accessibilityElement(children: .contain)
-                    .accessibilityLabel("Code comparison")
-                    .accessibilityHint("Stacked Do and Don't panels")
-                }
+                .accessibilityHint("Stacked Do and Don't panels")
             }
         }
     }

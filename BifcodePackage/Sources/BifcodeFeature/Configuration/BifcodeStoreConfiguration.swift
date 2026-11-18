@@ -2,7 +2,7 @@
 //  BifcodeStoreConfiguration.swift
 //
 //  Created on 22.12.2025.
-//  Copyright © 2026 IGR Soft. All rights reserved.
+//  Copyright © 2026 Agnidia. All rights reserved.
 //
 
 import DeveloperSupportStore
@@ -12,11 +12,11 @@ import Foundation
 /// Product IDs are loaded automatically from Products.plist by StoreHelper.
 public struct BifcodeStoreConfiguration: StoreConfigurationProtocol {
     public var privacyPolicyURL: URL {
-        URL(string: "https://igrsoft.com/info/app/bifcode/policy.html")!
+        URL(string: "https://agnidia.com/info/app/bifcode/policy.html")!
     }
     
     public var termsOfUseURL: URL {
-        URL(string: "https://igrsoft.com/info/app/bifcode/terms.html")!
+        URL(string: "https://agnidia.com/info/app/bifcode/terms.html")!
     }
     
     public var colors: StoreColors {

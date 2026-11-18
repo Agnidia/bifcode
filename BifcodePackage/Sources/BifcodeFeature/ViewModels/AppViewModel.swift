@@ -2,7 +2,7 @@
 //  AppViewModel.swift
 //
 //  Created on 17.12.2025.
-//  Copyright © 2026 IGR Soft. All rights reserved.
+//  Copyright © 2026 Agnidia. All rights reserved.
 //
 
 import CodeEditLanguages
@@ -172,9 +172,7 @@ public final class AppViewModel {
         let filename = "bifcode-\(Date().timeIntervalSince1970).png"
         let url = location.appendingPathComponent(filename)
         
-        guard let tiffData = image.tiffRepresentation,
-              let bitmap = NSBitmapImageRep(data: tiffData),
-              let pngData = bitmap.representation(using: .png, properties: [:])
+        guard let tiffData = image.tiffRepresentation, let bitmap = NSBitmapImageRep(data: tiffData), let pngData = bitmap.representation(using: .png, properties: [:])
         else {
             throw ExportError.conversionFailed
         }

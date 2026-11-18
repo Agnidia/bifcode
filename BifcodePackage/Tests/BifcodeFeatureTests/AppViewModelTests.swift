@@ -2,7 +2,7 @@
 //  AppViewModelTests.swift
 //
 //  Created on 18.12.2025.
-//  Copyright © 2026 IGR Soft. All rights reserved.
+//  Copyright © 2026 Agnidia. All rights reserved.
 //
 
 import CodeEditLanguages
@@ -397,7 +397,7 @@ struct ExportErrorTests {
     // MARK: - Error can be thrown
     
     @Test("conversionFailed can be thrown and caught")
-    func conversionFailedCanBeThrown() async {
+    func conversionFailedCanBeThrown() {
         func throwingFunction() throws {
             throw ExportError.conversionFailed
         }
@@ -415,7 +415,7 @@ struct ExportErrorTests {
     }
     
     @Test("saveFailed can be thrown and caught")
-    func saveFailedCanBeThrown() async {
+    func saveFailedCanBeThrown() {
         func throwingFunction() throws {
             throw ExportError.saveFailed
         }
@@ -433,7 +433,7 @@ struct ExportErrorTests {
     }
     
     @Test("accessDenied can be thrown and caught")
-    func accessDeniedCanBeThrown() async {
+    func accessDeniedCanBeThrown() {
         func throwingFunction() throws {
             throw ExportError.accessDenied
         }

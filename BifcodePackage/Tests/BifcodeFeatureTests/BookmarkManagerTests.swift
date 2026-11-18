@@ -2,7 +2,7 @@
 //  BookmarkManagerTests.swift
 //
 //  Created on 18.12.2025.
-//  Copyright © 2026 IGR Soft. All rights reserved.
+//  Copyright © 2026 Agnidia. All rights reserved.
 //
 
 import Foundation
@@ -129,7 +129,7 @@ struct BookmarkManagerTests {
     @Test("storeBookmark replaces existing bookmark")
     func storeBookmarkReplaces() throws {
         let tempURL1 = FileManager.default.temporaryDirectory
-        let tempURL2 = FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask).first!
+        let tempURL2 = try #require(FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask).first)
         
         try BookmarkManager.shared.storeBookmark(for: tempURL1)
         try BookmarkManager.shared.storeBookmark(for: tempURL2)
