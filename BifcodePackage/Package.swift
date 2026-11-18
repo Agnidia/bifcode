@@ -9,11 +9,12 @@ let package = Package(
         .library(
             name: "BifcodeFeature",
             targets: ["BifcodeFeature"]
-        ),
+        )
     ],
     dependencies: [
-        .package(url: "https://github.com/CodeEditApp/CodeEditSourceEditor", from: "0.12.0"),
-        .package(url: "https://github.com/Agnidia/DeveloperSupportStore", from: "1.0.0"),
+        .package(url: "https://github.com/CodeEditApp/CodeEditSourceEditor", from: "0.15.0"),
+        .package(url: "https://github.com/Agnidia/DeveloperSupportStore", from: "1.0.3"),
+        .package(url: "https://github.com/Agnidia/CustomizedAboutView.git", from: "1.0.0")
     ],
     targets: [
         .target(
@@ -21,16 +22,17 @@ let package = Package(
             dependencies: [
                 .product(name: "CodeEditSourceEditor", package: "CodeEditSourceEditor"),
                 .product(name: "DeveloperSupportStore", package: "DeveloperSupportStore"),
+                .product(name: "CustomizedAboutView", package: "CustomizedAboutView")
             ],
             resources: [
-                .process("Resources"),
+                .process("Resources")
             ]
         ),
         .testTarget(
             name: "BifcodeFeatureTests",
             dependencies: [
-                "BifcodeFeature",
+                "BifcodeFeature"
             ]
-        ),
+        )
     ]
 )

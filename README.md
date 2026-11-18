@@ -2,6 +2,19 @@
 
 A macOS app for creating visual code comparison images — perfect for documentation, tutorials, and style guides showing "Do" vs "Don't" code examples.
 
+## Powered By
+
+<a href="https://github.com/CodeEditApp/CodeEditSourceEditor">
+  <img src="https://img.shields.io/badge/Powered%20by-CodeEditSourceEditor-blue?style=for-the-badge" alt="Powered by CodeEditSourceEditor">
+</a>
+
+Bifcode's code editor is built on [**CodeEditSourceEditor**](https://github.com/CodeEditApp/CodeEditSourceEditor) — an Xcode-inspired code editor component from the [CodeEditApp](https://github.com/CodeEditApp) team.
+
+**Support the project:**
+- ⭐ [Star CodeEditSourceEditor on GitHub](https://github.com/CodeEditApp/CodeEditSourceEditor)
+- 🏠 [Check out CodeEdit](https://github.com/CodeEditApp/CodeEdit) — A native macOS code editor
+- 💖 [Sponsor CodeEditApp](https://github.com/sponsors/CodeEditApp)
+
 ## Features
 
 ### Code Editor
@@ -106,7 +119,10 @@ Bifcode/
 │   ├── Package.swift                 # Package configuration
 │   ├── Sources/BifcodeFeature/       # Feature code
 │   └── Tests/BifcodeFeatureTests/    # Unit tests
-└── BifcodeUITests/                   # UI automation tests
+├── BifcodeUITests/                   # UI automation tests
+├── Config/                           # XCConfig build settings
+├── AppStore/                         # App Store listing (asc metadata, screenshots)
+└── AGENTS.md                         # Development guidelines for AI agents
 ```
 
 ### Feature Package Structure
@@ -196,6 +212,20 @@ Build settings are managed through **XCConfig files** in `Config/`:
 ### App Sandbox & Entitlements
 
 The app is sandboxed with file access permissions. Edit `Bifcode/Bifcode.entitlements` to modify capabilities.
+
+## Publishing
+
+The App Store listing is managed with the [App Store Connect CLI (`asc`)](https://github.com/rorkai/App-Store-Connect-CLI):
+
+- `AppStore/metadata/` - name, subtitle, description, keywords and release notes (en-US, uk)
+- `AppStore/screenshots/APP_DESKTOP/` - Mac screenshots (shared by all locales)
+- `AppStore/README.md` - full runbook (validate, upload screenshots, apply metadata, submit)
+
+```bash
+asc metadata validate --dir AppStore/metadata
+```
+
+Xcode Cloud builds and uploads the binary. The build number comes from `CURRENT_PROJECT_VERSION` in `Config/Shared.xcconfig`.
 
 ## Notes
 
