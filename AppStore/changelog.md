@@ -2,6 +2,11 @@
 
 All notable changes to Bifcode are documented in this file.
 
+## Version 1.0.2
+
+Maintenance:
+- Improved compatibility and stability
+
 ## Version 1.0.1
 
 Maintenance:

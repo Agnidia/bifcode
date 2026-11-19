@@ -8,6 +8,7 @@
 import AppKit
 import CodeEditLanguages
 import CodeEditSourceEditor
+import StoreKit
 import SwiftUI
 
 /// The main view of the Bifcode application displaying side-by-side code comparison panels.
@@ -66,6 +67,7 @@ public struct ContentView: View {
     @State private var exportResult: ExportResult?
     
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
+    @Environment(\.requestReview) private var requestReview
     
     /// Language is stored via @AppStorage in ToolBarView, we read it here to initialize panels
     @AppStorage("selectedLanguage") private var selectedLanguageRaw: String = "swift"
@@ -255,6 +257,11 @@ public struct ContentView: View {
             let savedURL = try await viewModel.saveImage(nsImage)
             withAnimation(reduceMotion ? nil : .easeInOut(duration: 0.25)) {
                 exportResult = .success(savedURL)
+            }
+            if ReviewPromptTracker().recordSuccessfulExport() {
+                // Let the success toast show before the system dialog covers it.
+                try? await Task.sleep(for: .seconds(1.5))
+                requestReview()
             }
         } catch {
             withAnimation(reduceMotion ? nil : .easeInOut(duration: 0.25)) {
